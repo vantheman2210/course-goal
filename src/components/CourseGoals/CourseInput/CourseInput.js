@@ -60,7 +60,8 @@ const CourseInput = (props) => {
       return;
     }
     props.onAddGoal(enteredValue);
-    
+    setEnteredValue('');
+    event.target.reset();
   };
 
   return (
